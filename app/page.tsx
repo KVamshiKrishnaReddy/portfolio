@@ -42,9 +42,12 @@ export default function PortfolioWebsite() {
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/50 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold tracking-wide">
-            Vamshi Krishna Reddy
-          </h1>
+          <a
+          href="/"
+          className="text-2xl font-bold tracking-wide cursor-pointer"
+          >
+           Vamshi Krishna Reddy
+          </a>
 
           <div className="hidden md:flex gap-8 text-sm text-gray-300">
             <a href="#objective" className="hover:text-white transition">
@@ -74,95 +77,70 @@ export default function PortfolioWebsite() {
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center px-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-black to-black opacity-90" />
+      {/* Hero Section */}
+<section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20">
 
-        <div className="relative z-10 text-center max-w-5xl mx-auto">
-          <div className="inline-block px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm mb-6 text-sm text-gray-300">
-            AI/ML Engineer • Computer Vision Developer • AI Research Enthusiast
-          </div>
+  {/* Background Glow */}
+  <div className="absolute inset-0 bg-black" />
 
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-            Building Intelligent
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              AI Solutions
-            </span>
-          </h1>
+  <div className="absolute top-0 left-0 w-[350px] h-[350px] bg-cyan-500/20 blur-[120px] rounded-full" />
 
-          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
-            Passionate about Artificial Intelligence, SAR image analysis,
-            computer vision, and scalable AI-powered applications using modern
-            technologies.
-          </p>
+  <div className="absolute top-0 right-0 w-[350px] h-[350px] bg-purple-500/20 blur-[120px] rounded-full" />
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#projects"
-              className="px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition duration-300"
-            >
-              View Projects
-            </a>
+  <div className="max-w-5xl mx-auto px-6 w-full relative z-10 text-center">
 
-            <a
-              href="https://github.com/KVamshiKrishnaReddy"
-              target="_blank"
-              className="px-8 py-4 rounded-2xl border border-white/20 hover:bg-white/10 transition duration-300"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
-      </section>
+    <div className="inline-block px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-6 text-sm text-gray-300">
+      AI/ML Engineer • Computer Vision Developer • AI Enthusiast
+    </div>
 
-      {/* About */}
-      <section id="objective" className="py-28 px-6 border-t border-white/10">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-4xl font-bold mb-8">Objective</h2>
+    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
+        AI
+      </span>{" "}
+      & Full-Stack
+      <br />
 
-            <p className="text-gray-400 leading-relaxed text-lg mb-6">
-              Tech enthusiast skilled in Python, AI, ML and modern web
-              technologies with hands-on experience in computer vision and SAR
-              image processing.
-            </p>
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+        Innovation
+      </span>
+    </h1>
 
-            <p className="text-gray-400 leading-relaxed text-lg">
-              Currently pursuing B.Tech in CSE-AIML at Malla Reddy University
-              with a strong interest in building innovative AI systems and
-              solving real-world problems.
-            </p>
-          </div>
+    <p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+      I’m{" "}
+      <span className="font-bold text-white">
+        VAMSHI KRISHNA REDDY
+      </span>
+      , building intelligent applications using
+      Computer Vision, Deep Learning, and modern web technologies.
+    </p>
 
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 blur-3xl opacity-20 rounded-full" />
+    {/* Buttons */}
+    <div className="flex flex-wrap justify-center gap-4 mb-8">
 
-            <div className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-10">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">8.6</h3>
-                  <p className="text-gray-400 mt-2">CGPA</p>
-                </div>
+      <a
+        href="#projects"
+        className="px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition duration-300 text-base font-semibold"
+      >
+        Explore Projects
+      </a>
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">3+</h3>
-                  <p className="text-gray-400 mt-2">Major Projects</p>
-                </div>
+      <a
+        href="#skills"
+        className="px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition duration-300 text-base font-semibold"
+      >
+        View Skills
+      </a>
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">AI/ML</h3>
-                  <p className="text-gray-400 mt-2">Specialization</p>
-                </div>
+    </div>
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">ISRO</h3>
-                  <p className="text-gray-400 mt-2">Research Experience</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Contact */}
+    <div className="space-y-1 text-sm text-gray-400">
+      <p>vkrvkr2004@gmail.com</p>
+      <p>+91 9381622625</p>
+    </div>
+
+  </div>
+</section>
 
       {/* Skills */}
 <section
