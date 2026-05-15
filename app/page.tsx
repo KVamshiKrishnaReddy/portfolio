@@ -88,7 +88,6 @@ export default function PortfolioWebsite() {
   <div className="absolute top-0 right-0 w-[350px] h-[350px] bg-purple-500/20 blur-[120px] rounded-full" />
 
   <div className="max-w-5xl mx-auto px-6 w-full relative z-10 text-center">
-
     <div className="inline-block px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-6 text-sm text-gray-300">
       AI/ML Engineer • Computer Vision Developer • AI Enthusiast
     </div>
